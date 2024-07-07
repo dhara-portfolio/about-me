@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luxury Apartment - 1</title>
+        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/details.css">
+    </head>
+    <body>
+        <div class="content">
+            <h3>Luxury Apartment - 1</h3>
+            <section class="detail-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="./assets/images/b1.jpg" style="display: block;">
+                        <img src="./assets/images/b2.jpg">
+                        <img src="./assets/images/b4.jpg">
+                        <img src="./assets/images/b6.jpg">
+                        <img src="./assets/images/b7.jpg">
+                        <img src="./assets/images/b8.jpg">
+                        <img src="./assets/images/b9.jpg">
+                        <img src="./assets/images/b10.jpg">
+                        <img src="./assets/images/b12.jpg">
+                        <img src="./assets/images/b13.jpg">
+                        <img src="./assets/images/b14.jpg">
+                        <img src="./assets/images/b15.jpg">
+                        <img src="./assets/images/b16.jpg">
+                        <img src="./assets/images/c1.jpg">
+                        <img src="./assets/images/c2.jpg">
+                        <img src="./assets/images/c4.jpg">
+                        <img src="./assets/images/c6.jpg">
+                        <img src="./assets/images/c7.jpg">
+                        <img src="./assets/images/c8.jpg">
+                        <img src="./assets/images/c9.jpg">
+                        <img src="./assets/images/c10.jpg">
+                        <img src="./assets/images/c12.jpg">
+                        <img src="./assets/images/c13.jpg">
+                        <img src="./assets/images/c14.jpg">
+                        <img src="./assets/images/c15.jpg">
+                        <img src="./assets/images/c16.jpg">
+                        <img src="./assets/images/c17.jpg">
+                        <img src="./assets/images/c18.jpg">
+                        
+                    </div>
+                    <button class="prev" aria-label="Previous" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" aria-label="Next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <article>
+                    <ul>
+                        <li><strong>Objective</strong> : To create a modern, comfortable, and aesthetically pleasing home environment that caters to the needs and lifestyle of the occupants. Each space is designed with a specific purpose, ensuring a cohesive yet distinctive look throughout the home.</li>
+                        <li>Features a cozy seating area with a modern sofa, soft lighting, and a stylish TV unit.To provide a comfortable and inviting space for relaxation and entertainment.</li>
+                        <li>A spacious bedroom with a statement headboard, modern lighting, and ample storage. To create a serene and luxurious sleeping environment.</li>
+                        <li>Includes a contemporary dining table, comfortable chairs, and decorative wall features. To offer a stylish and functional space for meals and gatherings.</li>
+                        <li>A modern guest bedroom with a minimalist design, comfortable bed, and functional decor.To provide a welcoming and comfortable space for guests.</li>
+                        <li>Similar to the master bedroom but with unique design elements and personalized decor.To create a personalized and comfortable space for occupants.</li>
+                        <li>Features a cozy seating arrangement with a swing, cushions, and greenery. To provide a relaxing outdoor space for leisure and enjoyment.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="extra-detail-container">
+                <ul>
+                    <li>A luxurious bedroom with wood paneling, modern lighting, and elegant decor. To offer a sophisticated and restful sleeping environment. A stylish outdoor space with brick walls, plants, and comfortable seating.To create a peaceful and inviting outdoor retreat.</li>
+                    <li>A modern kitchen with sleek cabinetry, ample counter space, and high-end appliances. To provide a functional and stylish space for cooking and meal preparation. Features a stylish door, modern storage, and decorative elements.To create a welcoming and elegant entrance to the home.</li>
+                    <li><strong>Color Scheme</strong> : Neutral tones with accents of soft colors to create a calming and elegant atmosphere.</li>
+                    <li><strong>Conclusion</strong> : This design brief aims to transform the home into a harmonious blend of style, comfort, and functionality, ensuring each area serves its intended purpose while contributing to the overall aesthetic appeal of the residence.</li>
+
+                </ul>
+            </section>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="local/path/to/jquery.min.js"><\/script>')</script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        
+        function showSlides() {
+            let slides = document.querySelectorAll(".carousel-images img");
+            slideIndex = (slideIndex + slides.length) % slides.length;
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'block';
+        }
+    </script>
+</html>

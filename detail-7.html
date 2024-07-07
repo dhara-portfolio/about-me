@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luxury Apartment - 4</title>
+        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/details.css">
+    </head>
+    <body>
+        <div class="content">
+            <h3>Luxury Apartment - 4</h3>
+            <section class="detail-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="./assets/images/ra1.jpg" style="display: block;">
+                        <img src="./assets/images/ra2.jpg">
+                        <img src="./assets/images/ra3.jpg">
+                        <img src="./assets/images/ra4.jpg">
+                        <img src="./assets/images/ra5.jpg">
+                        <img src="./assets/images/ra6.jpg">
+                        <img src="./assets/images/ra7.jpg">
+                        <img src="./assets/images/ra8.jpg">
+                        <img src="./assets/images/ra9.jpg">
+                        <img src="./assets/images/ra10.jpg">
+                        <img src="./assets/images/ra11.jpg">
+                        <img src="./assets/images/ra12.jpg">
+                        <img src="./assets/images/ra13.jpg">
+                        <img src="./assets/images/ra14.jpg">
+                        <img src="./assets/images/ra15.jpg">
+                        <img src="./assets/images/ra16.jpg">
+                        <img src="./assets/images/ra17.jpg">
+                        <img src="./assets/images/ra18.jpg">
+                        <img src="./assets/images/ra19.jpg">
+                        <img src="./assets/images/ra20.jpg">
+                        <img src="./assets/images/ra21.jpg">
+                        <img src="./assets/images/ra22.jpg">
+                        <img src="./assets/images/ra23.jpg">
+                        <img src="./assets/images/ra24.jpg">
+                        <img src="./assets/images/ra25.jpg">
+                        <img src="./assets/images/ra26.jpg">
+                        <img src="./assets/images/ra27.jpg">
+                        <img src="./assets/images/ra28.jpg">
+                        <img src="./assets/images/ra29.jpg">
+                    </div>
+                    <button class="prev" aria-label="Previous" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" aria-label="Next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <article>
+                    <h4>Design Brief</h4>
+                    <ul>
+                        <li>This contemporary living room combines elegance with comfort, featuring neutral tones, sleek furniture, and an abundance of natural light. Create a serene and inviting atmosphere perfect for relaxation and social gatherings.</li>
+                        <li>The dining area showcases a blend of modern and rustic elements, with wooden furniture, minimalist décor, and a spacious layout.Foster a warm and welcoming environment for family meals and entertaining guests.</li>
+                        <li>This lounge area features a mix of contemporary and traditional design, with custom furniture, unique lighting, and thoughtful art placement. Provide a stylish yet comfortable space for reading, conversation, and relaxation.</li>
+                        <li>The staircase and hallway incorporate artistic elements, including a curated photo wall and ambient lighting, enhancing the transition between spaces.Transform a functional area into a visually appealing journey through the home.</li>
+                        <li>The kitchen and dining area emphasize functionality and style, with modern appliances, ample seating, and a cohesive design scheme.Create a practical and aesthetically pleasing space for cooking and dining experiences.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="extra-detail-container">
+                <ul>
+                    <li>A bright and airy bedroom with large windows, featuring a cozy built-in seating area beneath the windows. The room has a minimalist design with light-colored walls and a combination of modern and rustic elements such as a wooden side table with a plant.</li>
+                        <li>This modern bedroom boasts a comfortable bed with a padded headboard, flanked by hanging pendant lights. The decor includes a circular mirror above the bed, a small bedside table, and a mix of soft textures and neutral tones to create a calming ambiance.</li>
+                        <li>The bedroom offers a serene and inviting atmosphere with ample natural light. It features a long bench with cushions along one wall and minimalist decor that emphasizes comfort and relaxation.</li>
+                    <li>An elegant and cozy bedroom designed with natural textures and soft lighting. The room includes a comfortable bed, warm wooden accents, and a mix of modern and rustic elements, creating a welcoming and tranquil space.</li>
+                    <li>A contemporary bedroom designed for a family-friendly environment. It features a main bed with a padded headboard, a crib area for a baby, and a combination of modern and natural elements to create a harmonious and functional space.</li>
+                    <li><strong>Conclusion</strong> : The design concepts presented in these images seamlessly integrate modern aesthetics with practical functionality. Each area is thoughtfully designed to enhance the living experience, emphasizing comfort, style, and usability. The use of neutral tones, natural light, and a mix of contemporary and traditional elements ensures a timeless appeal, making these spaces ideal for both everyday living and special occasions.</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="local/path/to/jquery.min.js"><\/script>')</script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        
+        function showSlides() {
+            let slides = document.querySelectorAll(".carousel-images img");
+            slideIndex = (slideIndex + slides.length) % slides.length;
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'block';
+        }
+    </script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compact Living - 2</title>
+        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/details.css">
+    </head>
+    <body>
+        <div class="content">
+            <h3>Compact Living - 2</h3>
+            <section class="detail-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="./assets/images/f1.jpeg" style="display: block;">
+                        <img src="./assets/images/f2.jpeg">
+                        <img src="./assets/images/f3.jpeg">
+                        <img src="./assets/images/f4.jpeg">
+                        <img src="./assets/images/f5.jpeg">
+                        <img src="./assets/images/f6.jpeg">
+                        <img src="./assets/images/f7.jpeg">
+                        <img src="./assets/images/f8.jpeg">
+                        <img src="./assets/images/f9.jpeg">
+                        <img src="./assets/images/f10.jpeg">
+                        <img src="./assets/images/f11.jpeg">
+                        <img src="./assets/images/f12.jpeg">
+                        <img src="./assets/images/f13.jpeg">
+                        <img src="./assets/images/f14.jpeg">
+                        <img src="./assets/images/f15.jpeg">
+                    </div>
+                    <button class="prev" aria-label="Previous" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" aria-label="Next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <article>
+                    <h4>Design Brief</h4>
+                    <ul>
+                        <li>This living room features a modern sectional sofa with a sleek design, complemented by a wooden coffee table and minimalistic decor. The neutral color palette with earthy tones creates a cozy yet contemporary ambiance.</li>
+                        <li>The living area transitions seamlessly into a stylish entryway with a bench and wall-mounted storage. The design incorporates soft lighting and green plants, enhancing the welcoming atmosphere.</li>
+                        <li>The entryway is designed with a focus on functionality and aesthetics. The built-in bench and shoe storage unit are paired with a statement wall featuring decorative round mirrors, providing a chic and practical solution for organizing the space.</li>
+                        <li>The dining space is elegantly set with a marble-top dining table and upholstered chairs, illuminated by modern pendant lights. The room's design emphasizes simplicity and sophistication, with large windows allowing natural light to flood the space.</li>
+                        <li>The pooja room is designed with a traditional touch, featuring wooden cabinets and intricate carvings. The serene and sacred space is enhanced by soft lighting and a well-organized layout, making it a perfect spot for prayer and meditation.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="extra-detail-container">
+                <ul>
+                    <li>The console table area is adorned with a modern artwork and flanked by decorative plants. The design is clean and uncluttered, emphasizing the simplicity and elegance of the decor. This bedroom features a minimalist design with a focus on clean lines and a calming blue palette. The built-in shelving adds functionality and aesthetic appeal to the room.</li>
+                    <li>This cozy twin bedroom showcases modern design elements with a touch of comfort, featuring upholstered headboards and neutral tones. The large window allows natural light to fill the space, creating a warm and inviting atmosphere.</li>
+                    <li>This bedroom embraces a minimalist approach with a focus on simplicity and comfort. The neutral color palette and clean lines create a serene and restful environment.Another view of the minimalist bedroom, highlighting the spacious layout and the abundance of natural light. The room is designed to promote relaxation and tranquility.</li>
+                    <li>This master bedroom features a blend of modern and cozy elements, with a focus on soft, neutral tones and a functional layout. The built-in shelves and seating area enhance the room's practicality and comfort.</li>
+                    <li>The study area in the bedroom combines functionality with style, providing ample storage and workspace. The design ensures that the area remains clutter-free and conducive to productivity.</li>
+                    <li><strong>Conclusion</strong> : The interior design showcased in these images epitomizes a harmonious blend of modern elegance and functional aesthetics. Each space, from the living room to the dining area and entryway, has been thoughtfully crafted to create a welcoming and sophisticated ambiance. The use of neutral color palettes, sleek furniture, and minimalistic decor elements enhances the overall contemporary feel while ensuring comfort and practicality. The design seamlessly integrates traditional touches, as seen in the pooja room, with modern elements, providing a balanced and cohesive look throughout the home</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="local/path/to/jquery.min.js"><\/script>')</script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        
+        function showSlides() {
+            let slides = document.querySelectorAll(".carousel-images img");
+            slideIndex = (slideIndex + slides.length) % slides.length;
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'block';
+        }
+    </script>
+</html>

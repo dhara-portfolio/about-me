@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luxury Apartment - 3</title>
+        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/details.css">
+    </head>
+    <body>
+        <div class="content">
+            <h3>Luxury Apartment - 3</h3>
+            <section class="detail-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="./assets/images/si1.jpg" style="display: block;">
+                        <img src="./assets/images/si2.jpg">
+                        <img src="./assets/images/si3.jpg">
+                        <img src="./assets/images/si4.jpg">
+                        <img src="./assets/images/si5.jpg">
+                        <img src="./assets/images/si6.jpg">
+                        <img src="./assets/images/si7.jpg">
+                        <img src="./assets/images/si8.jpg">
+                        <img src="./assets/images/si9.jpg">
+                        <img src="./assets/images/si10.jpg">
+                        <img src="./assets/images/si11.jpg">
+                        <img src="./assets/images/si12.jpg">
+                        <img src="./assets/images/si13.jpg">
+                        <img src="./assets/images/si14.jpg">
+                        <img src="./assets/images/si15.jpg">
+                        <img src="./assets/images/si16.jpg">
+                        <img src="./assets/images/si17.jpg">
+                        <img src="./assets/images/si18.jpg">
+                        <img src="./assets/images/si19.jpg">
+                        <img src="./assets/images/si20.jpg">
+                        <img src="./assets/images/si21.jpg">
+                        <img src="./assets/images/si22.jpg">
+                        <img src="./assets/images/si23.jpg">
+                        <img src="./assets/images/si24.jpg">
+                        <img src="./assets/images/si25.jpg">
+                        <img src="./assets/images/si26.jpg">
+                        <img src="./assets/images/si27.jpg">
+                        <img src="./assets/images/si28.jpg">
+                        <img src="./assets/images/si29.jpg">
+                    </div>
+                    <button class="prev" aria-label="Previous" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" aria-label="Next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <article>
+                    <h4>Design Brief</h4>
+                    <ul>
+                        <li>This modern living room design emphasizes clean lines and a neutral color palette, with white walls and minimalist furniture. The use of wood accents and black details adds warmth and sophistication, creating a stylish and inviting space.</li>
+                        <li>Featuring a unique blend of modern and contemporary styles, this seating area uses curved furniture and a muted blue and white color scheme. The layout fosters a cozy atmosphere while the large windows ensure plenty of natural light.</li>
+                        <li>The stylish staircase area highlights a gallery wall with black-and-white photography, combining artistic elements with functional design. The spiral staircase and recessed lighting enhance the architectural beauty of the space.</li>
+                        <li>This cozy lounge area is designed for relaxation, featuring a mix of plush seating options and a soft color palette. The combination of modern and traditional elements creates a balanced and serene environment.</li>
+                        <li>An elegant dining area with a blend of contemporary and traditional styles, featuring a long dining table with minimalist chairs. The space is accentuated with subtle decor and ample lighting, making it perfect for gatherings.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="extra-detail-container">
+                <ul>
+                    <li>This meditative space is designed with simplicity and tranquility in mind, featuring a dedicated area for meditation with a serene Buddha statue. The use of natural materials and soft lighting enhances the peaceful ambiance.</li>
+                    
+                    <li>The design is modern and contemporary to traditional and meditative, each space thoughtfully designed to meet both aesthetic and functional needs. The use of clean lines, neutral color palettes, and strategic lighting creates cohesive and inviting environments ideal for modern living.</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="local/path/to/jquery.min.js"><\/script>')</script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        
+        function showSlides() {
+            let slides = document.querySelectorAll(".carousel-images img");
+            slideIndex = (slideIndex + slides.length) % slides.length;
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'block';
+        }
+    </script>
+</html>
